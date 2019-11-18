@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import logo from "../logo.svg";
 import cart from "../cart.svg";
 import styled from "styled-components";
-import { ButtonContainer } from "./Button";
 
 function Navbar() {
   return (
