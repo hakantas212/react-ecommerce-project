@@ -33,10 +33,10 @@ export default class Product extends Component {
                   {" "}
                   {inCart ? (
                     <p className="text-capitalize mb-0" disabled>
-                      In Cart
+                      ALREADY IN CART
                     </p>
                   ) : (
-                    <span>ADD TO CART </span>
+                    <p className="text-capitalize mb-0">ADD TO CART</p>
                   )}
                 </button>
               </div>
