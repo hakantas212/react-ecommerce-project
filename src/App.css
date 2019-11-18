@@ -2,24 +2,19 @@
   --mainBlue: #2a2a72;
   --lightBlue: #009ffd;
   --mainWhite: #f3f3f3;
-  --mainDark: #232528;
+  --mainDark: #131212;
   --mainYellow: #ffa400;
 }
 
 body {
-  font-family: "Oswald", sans-serif !important;
+  font-family: "Quicksand", sans-serif;
   background: var(--mainWhite) !important;
   color: var(--mainDark) !important;
 }
 
 .text-title {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Quicksand", sans-serif;
   letter-spacing: 0.3rem;
-  text-transform: uppercase;
-}
-
-.text-blue {
-  color: var(--mainBlue);
 }
 
 .text-bright {
