@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const ButtonContainer = styled.button`
-  text-transfrom: capitalize;
   font-size: 1.4rem;
   background: transparent;
   border: 0.05rem solid var(--lightBlue);
