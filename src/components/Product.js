@@ -21,6 +21,7 @@ export default class Product extends Component {
                     className="card-img-top"
                   ></img>
                 </Link>
+                <div className="black-overlay"> </div>
                 <button
                   className="cart-btn"
                   disabled={inCart ? true : false}
@@ -29,12 +30,13 @@ export default class Product extends Component {
                     value.openModal(id);
                   }}
                 >
+                  {" "}
                   {inCart ? (
                     <p className="text-capitalize mb-0" disabled>
                       In Cart
                     </p>
                   ) : (
-                    <i className="fas fa-cart-plus" />
+                    <span>ADD TO CART </span>
                   )}
                 </button>
               </div>
@@ -55,7 +57,8 @@ export default class Product extends Component {
 
 const ProductWrapper = styled.div`
   .card {
-    border-color: transparent;
+    border: none;
+    margin: 0;
     transition: all 0.6 linear;
   }
 
@@ -79,6 +82,21 @@ const ProductWrapper = styled.div`
     position: relative;
     overflow: hidden;
   }
+
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: 0.02rem;
+  }
+
+  .black-overlay:hover {
+    opacity: 1;
+  }
   .card-img-top {
     transition: all 0.4s linear;
   }
@@ -87,19 +105,27 @@ const ProductWrapper = styled.div`
   }
 
   .cart-btn {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 0.2rem 0.4rem;
     background: var(--lightBlue);
     color: var(--mainWhite);
     font-size: 1rem;
-    transform: translate(100%, 100%);
-    transition: all 0.4s linear;
+    border: none;
+    position: absolute;
+    left: 27%;
+    bottom: 18px;
+    -webkit-transform: translateY(500%);
+    -moz-transform: translateY(500%);
+    -ms-transform: translateY(500%);
+    -o-transform: translateY(0%);
+    transform: translateY(170%);
   }
 
   .img-container:hover .cart-btn {
     transform: translate(0, 0);
-    transition: all 0.4s linear;
+    transition: all 0.3s linear;
+  }
+
+  .cart-btn:hover {
+    background: var(--mainBlue);
+    border: none;
   }
 `;
