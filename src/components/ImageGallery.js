@@ -15,7 +15,7 @@ function ImageGallery() {
 
   useEffect(() => {
     const timelimit = setInterval(() => {
-      if (image === 5) {
+      if (image === 4) {
         setImage(0);
       } else {
         setImage(last => last + 1);
@@ -33,7 +33,7 @@ function ImageGallery() {
       >
         {images.map(image => (
           <GalleryImage
-            objectFit="contain"
+            objectFit="cover"
             key={image}
             src={image}
           ></GalleryImage>
@@ -45,8 +45,8 @@ function ImageGallery() {
 
 const Section = styled.section`
   .GallerImage {
-    height: "10vh";
-    width: "10vw";
+    height: "100vh";
+    width: "100vw";
   }
 `;
 
