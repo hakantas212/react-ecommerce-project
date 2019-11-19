@@ -1,5 +1,4 @@
 import React from "react";
-import image from "../../src/aboutus.jpg";
 import workshop from "../../src/workshop.jpg";
 
 export default function About() {
@@ -47,7 +46,7 @@ export default function About() {
             </p>
           </div>
           <div className="col-10 max-auto col-md-6 my-3 ">
-            <img src={image} alt="about" className="img-fluid"></img>
+            <img alt="about" className="img-fluid"></img>
           </div>
         </div>
       </div>
