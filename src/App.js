@@ -15,7 +15,7 @@ import { BrowserRouter } from "react-router-dom";
 function App() {
   return (
     <React.Fragment>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Navbar></Navbar>
         <ScrollHandle></ScrollHandle>
         <Switch>
