@@ -43,11 +43,6 @@ function ImageGallery() {
   );
 }
 
-const Section = styled.section`
-  .GallerImage {
-    height: "100vh";
-    width: "100vw";
-  }
-`;
+const Section = styled.section``;
 
 export default ImageGallery;
