@@ -18,7 +18,7 @@ export default class Details extends Component {
               </div>
               <div className="row">
                 <div className="col-10 max-auto col-md-6 my-3 ">
-                  <img src={img} className="img-fluid" alt="detail-image"></img>
+                  <img src={img} className="img-fluid" alt="detail"></img>
                 </div>
                 <div className="col-10 max-auto col-md-6 my-3 text-capitalize">
                   <h3>Model: {title}</h3>
