@@ -35,14 +35,7 @@ export default class ProductList extends Component {
 
 const Wrapper = styled.section`
   section {
-    height: 100%;
+    height: 500px;
     width: 100%;
-  }
-
-  section img {
-    display: block;
-    max-height: 10px;
-    width: 800px;
-    object-fit: cover;
   }
 `;

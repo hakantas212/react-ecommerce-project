@@ -33,7 +33,7 @@ function ImageGallery() {
       >
         {images.map(image => (
           <GalleryImage
-            objectFit="cover"
+            objectFit="contain"
             key={image}
             src={image}
           ></GalleryImage>
@@ -43,6 +43,10 @@ function ImageGallery() {
   );
 }
 
-const Section = styled.section``;
+const Section = styled.section`
+  max-width: 100%;
+  height: 100%;
+  overflow: hidden;
+`;
 
 export default ImageGallery;
